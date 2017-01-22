@@ -1,5 +1,5 @@
 package = "LOOPComponents"
-version = "1.0beta"
+version = "1.0beta-1"
 source = {
 	url = "http://www.tecgraf.puc-rio.br/~maia/lua/packs/loopcomp-1.0beta.tar.gz",
 }
@@ -16,17 +16,14 @@ description = {
 dependencies = {
 	"lua >= 5.1",
 	"loop >= 3.0",
-	"looplib >= 2.0beta",
 }
 build = {
-	type = "none",
-	install = {
-		lua = {
-			["loop.component.base"] = "lua/loop/component/base.lua",
-			["loop.component.contained"] = "lua/loop/component/contained.lua",
-			["loop.component.dynamic"] = "lua/loop/component/dynamic.lua",
-			["loop.component.intercepted"] = "lua/loop/component/intercepted.lua",
-			["loop.component.wrapped"] = "lua/loop/component/wrapped.lua",
-		},
+	type = "builtit",
+	modules = {
+		["loop.component.base"] = "lua/loop/component/base.lua",
+		["loop.component.contained"] = "lua/loop/component/contained.lua",
+		["loop.component.dynamic"] = "lua/loop/component/dynamic.lua",
+		["loop.component.intercepted"] = "lua/loop/component/intercepted.lua",
+		["loop.component.wrapped"] = "lua/loop/component/wrapped.lua",
 	},
 }
