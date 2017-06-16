@@ -10,8 +10,8 @@ description = {
 		The LOOP Component is a set of packages for supporting different models
 		of component-based design in the Lua language.
 	]],
-	license = "MIT/X11",
-	homepage = "http://www.tecgraf.puc-rio.br/~maia/lua/loop/component",
+	license = "MIT",
+	homepage = "https://github.com/renatomaia/loop-compdev",
 	maintainer = "Renato Maia <maia@tecgraf.puc-rio.br>",
 }
 dependencies = {
@@ -19,7 +19,7 @@ dependencies = {
 	"loop >= 3.0",
 }
 build = {
-	type = "builtit",
+	type = "builtin",
 	modules = {
 		["loop.component.base"] = "lua/loop/component/base.lua",
 		["loop.component.contained"] = "lua/loop/component/contained.lua",

@@ -1,4 +1,4 @@
-package = "LOOPComponents"
+package = "loopcomp"
 version = "1.0beta-1"
 source = {
 	url = "http://www.tecgraf.puc-rio.br/~maia/lua/packs/loopcomp-1.0beta.tar.gz",
@@ -9,16 +9,16 @@ description = {
 		The LOOP Component is a set of packages for supporting different models
 		of component-based design in the Lua language.
 	]],
-	license = "MIT/X11",
+	license = "MIT",
 	homepage = "http://www.tecgraf.puc-rio.br/~maia/lua/loop/component",
 	maintainer = "Renato Maia <maia@tecgraf.puc-rio.br>",
 }
 dependencies = {
-	"lua >= 5.1",
-	"loop >= 3.0",
+	"lua >= 5.1, < 5.4",
+	"loop >= 3.0, < 4.0",
 }
 build = {
-	type = "builtit",
+	type = "builtin",
 	modules = {
 		["loop.component.base"] = "lua/loop/component/base.lua",
 		["loop.component.contained"] = "lua/loop/component/contained.lua",
